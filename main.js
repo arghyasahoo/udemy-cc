@@ -1,5 +1,5 @@
 function expandChapters() {
-  chapters = document.querySelectorAll('[id^="accordion-panel-title--"]');
+  chapters = document.querySelectorAll('[id^="u90-accordion-panel-title--"]');
 
   for (let i=0; i<chapters.length; i++) {
     chapters[i].click();
@@ -8,12 +8,12 @@ function expandChapters() {
 
 
 function checkLectures() {
-  var ids = document.querySelectorAll('[id^="checkbox--"]');
+  var ids = document.querySelectorAll('[id^="u90-checkbox--"]');
   var checkboxes = [];
 
   Object.entries(ids).forEach(id => {
     currId = id[1].id;
-    if (currId.startsWith('checkbox--'))
+    if (currId.startsWith('u90-checkbox--'))
       checkboxes.push(id[1].id);
   });
 
